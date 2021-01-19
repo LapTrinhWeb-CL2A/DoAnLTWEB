@@ -1,0 +1,85 @@
+.maunen
+{
+    background-color: #f1f1f1;
+}
+
+
+.box-login {
+    max-width: 800px !important;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.box-login .head {
+    padding: 40px 0;
+    clear: both;
+    text-align: center;
+}
+.box-login .head h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.box-login p {
+    display: block;
+    margin-top: 10px;
+    line-height: 190%;
+}
+p {
+    margin-bottom: 10px;
+}
+
+.acc
+{
+    display: inline-block;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 800px !important;
+        margin: 30px auto;
+    }
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px;
+    outline: 0;
+
+
+}
+.modal-body {
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+}
+.fieldset .fa {
+    color: #ddd;
+    position: absolute;
+    padding: 18px;
+    font-size: 20px;
+    pointer-events: none;
+}
+.cd-form {
+    padding: 2em;
+}
+.cd-form input.has-padding {
+    padding: 12px 20px 12px 40px;
+}
+.cd-form input.full-width, .cd-form select.full-width, .cd-form textarea.full-width {
+    width: 100%;
+}
+
+
+
+.cd-form input[type=submit], .cd-form input[type=reset] {
+    padding: 16px 0;
+    cursor: pointer;
+    background: #CD2228;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    appearance: none;
+    width: 180px;
+}
