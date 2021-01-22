@@ -64,8 +64,8 @@
                 <a href="mailto:support@ielts-fighter.com"> chienbinh@ielts-fighter.com </a>  <!-- email chinh sua o day -->
             </div>
             <div class="col-register">
-                <a href="${pageContext.request.contextPath}/Home/About">Ðăng ký</a> |
-                <a href="">Ðăng nhập</a> |
+                <a href="${pageContext.request.contextPath}/Account/Register">Ðăng ký</a> |
+                <a href="${pageContext.request.contextPath}/Account/Login">Ðăng nhập</a> |
                 <a href="">Tìm kiếm</a>
             </div>
 
@@ -92,23 +92,23 @@
 
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
-                                <li><a href="#" class="badge badge-light">Light</a></li>
+                                <li><a href="${pageContext.request.contextPath}/Home/" class="badge badge-light">Trang chủ</a></li>
                                 <li><div class="gach"></div></li>
-                                <li><a href="#" class="badge badge-light">Light</a></li>
+                                <li><a href="${pageContext.request.contextPath}/views/Course/Index.jsp"  class="badge badge-light">Khóa học</a></li>
                                 <li><div class="gach"></div></li>
-                                <li><a href="#" class="badge badge-light">Light</a></li>
+                                <li><a href="#" class="badge badge-light">Tài liệu</a></li>
                                 <li><div class="gach"></div></li>
-                                <li><a href="#" class="badge badge-light">Light</a></li>
+                                <li><a href="#" class="badge badge-light">Giới thiệu</a></li>
                                 <li><div class="gach"></div></li>
                                 <li>
                                     <div class="dropdown show">
                                         <a class="btn btn-secondary dropdown-toggle text-dark " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Dropdown link
+                                            Trang
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="dropdown-item" href="#">Bài viết</a>
+                                            <a class="dropdown-item" href="#">Về chúng tôi</a>
+                                            <a class="dropdown-item" href="#">Câu hỏi thường gặp</a>
                                         </div>
                                     </div>
                                 </li>

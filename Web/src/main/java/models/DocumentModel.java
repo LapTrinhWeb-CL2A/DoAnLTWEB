@@ -5,7 +5,6 @@ import beans.Document;
 import org.sql2o.Connection;
 import utils.DbUtils;
 
-import javax.print.Doc;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,6 +17,32 @@ public class DocumentModel {
             return con.createQuery(sql).executeAndFetch(Document.class);
         }
     }
+    public static List<Document> getAll2(String a) {
+
+        final String sql = "SELECT * from documents order by CatID LIMIT "+a+","+"5";
+       /* final String sql = "SELECT * from documents order by CatID LIMIT '"+5+"'";*/
+        try (Connection con = DbUtils.getConnection()) {
+            return con.createQuery(sql).executeAndFetch(Document.class);
+        }
+    }
+    public static List<Document> getAll1(String name) {
+        final String sql = "select * from documents where CatName='"+name+"'";
+        try (Connection con = DbUtils.getConnection()) {
+
+            return con.createQuery(sql).executeAndFetch(Document.class);
+        }
+    }
+/*    public static int getNumber() {
+
+        final String sql = "select count(*)from documents";
+        try (Connection con = DbUtils.getConnection()) {
+
+             return (int)con.createQuery(sql).executeAndFetchFirst(int.class);
+        }
+    }*/
+
+
+
 
     public static void add(Document d) {
         final String sql = "INSERT INTO documents (CatID,CatName,CatDemo) VALUES (:catid,:catname,:catdemo)";

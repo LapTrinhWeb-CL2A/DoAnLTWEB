@@ -15,6 +15,13 @@ public class CategoryModel {
             return con.createQuery(sql).executeAndFetch(Category.class);
         }
     }
+    public static List<Category> getAll1(String name) {
+        String sql="select * from "+name;
+        try (Connection con = DbUtils.getConnection()) {
+
+            return con.createQuery(sql).executeAndFetch(Category.class);
+        }
+    }
 
     public static void add(Category c) {
         final String sql = "INSERT INTO alo (CatName) VALUES (:catname)";

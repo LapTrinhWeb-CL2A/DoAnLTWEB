@@ -9,16 +9,23 @@
 <jsp:useBean id="documents" scope="request" type="java.util.List<beans.Document>"/>
 <t:main>
     <jsp:body>
-      <div class="container">
-          <h4>
 
-              <a class="btn btn-outline-success" href="${pageContext.request.contextPath}/Document/Add" role="button">
-                  <i class="fa fa-plus" aria-hidden="true"></i>
-                  Add Category
-              </a>
-          </h4>
+        <div  class="container">
 
-      </div>
+
+
+                    <h3>Danh sách các tài liệu</h3>
+
+
+                    <h4>
+                        <a class="btn btn-outline-success" href="${pageContext.request.contextPath}/Document/Add" role="button">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Add Document
+                        </a>
+                    </h4>
+
+
+        </div>
         <div class="container">
             <ul class="list_hot_post">
             <c:forEach var="c" items="${documents}">
